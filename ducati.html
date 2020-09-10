@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ducati</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style1.css">
+
+        
+  </head>
+  <body>
+ 
+  <!-- menú de navegación -->
+  <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-sm sticky-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+    <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo Bootstrap">
+    Ducati
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <div class="navbar-nav mr-auto ml-auto text-center">
+      <a class="nav-item nav-link active" href="https://www.ducati.com/es/es/home">Pagina oficial</a>
+      <a class="nav-item nav-link active" href="https://www.ducati.com/es/es/editorial/dealer-network">Nosotros</a>
+      <a class="nav-item nav-link active" href="https://configurator.ducati.com/bikes/es/es/?_ga=2.253421326.666538642.1598734625-94393441.1598734625">Servicios</a>
+      <a class="nav-item nav-link active" href="#">Contacto</a>
+    </div>
+    </div>
+  </nav>
+  <!-- fin menú de navegación -->
+
+
+  
+    <canvas width="1310" height="300" id="canvas"></canvas>
+    <script>
+      var cnv, ctx, pos_x = 0, img;
+      function anim(){
+        ctx.drawImage(img, pos_x, 0);
+        pos_x += 5;
+        setTimeout(anim, 50);
+
+      }
+      window.onload = function(){
+        img = new Image();
+        img.src = 'img/canvas.jpg';
+        cnv = document.getElementById('canvas');
+        ctx = cnv.getContext('2d');
+
+        anim();
+      };
+      
+    
+    </script>
+
+  
+
+
+  <!--  card -->
+  <section class="container my-5 py-5">
+  <h3 class="text-uppercase text-center mb-4">Descubre el placer de viajar con Ducati</h3>
+  <p class="lead text-center mb-5">Ducati Motor Holding S.p.A. es una empresa italiana fabricante de motocicletas, fundada en 1926.</p>
+  <div class="card-deck">
+    <div class="card">
+      <a href="#"><img class="card-img-top img-fluid" src="img/02.jpg" alt="Card image cap"></a>
+      <div class="card-block">
+        <h4 class="card-title">MyDucati</h4>
+        <p class="card-text">La estabilidad general mejorada de la moto gracias a la nueva configuración del chasis y la electrónica mejora la confianza del conductor.</p>
+      
+        
+      </div>
+    </div>
+    <div class="card">
+      <a href="#"><img class="card-img-top img-fluid" src="img/03.jpg"  alt="Card image cap"></a>
+      <div class="card-block">
+        <h4 class="card-title">Historia</h4>
+        <p class="card-text">La marca con mayor número de victorias en el Campeonato Mundial de Superbikes.</p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <a href="#"><img class="card-img-top img-fluid" src="img/04.jpg" alt="Card image cap"></a>
+      <div class="card-block">
+        <h4 class="card-title">Mantenimiento</h4>
+        <p class="card-text">Los mejores talleres.</p>
+      
+      </div>
+    </div>
+  </div>
+  <div class="card-deck mt-5">
+    <div class="card">
+      <a href="#"><img class="card-img-top img-fluid" src="img/05.jpg" alt="Card image cap"></a>
+      <div class="card-block">
+        <h4 class="card-title">La mejor experiencia</h4>
+        <p class="card-text">Desata el mejor lado de tu moto con los accesorios Ducati.</p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <a href="#" data-toggle="modal" data-target="#exampleModalLong5"><img class="card-img-top img-fluid" src="img/07.jpg" alt="Card image cap"></a>
+      <div class="card-block">
+        <h4 class="card-title">Configura tu Ducati</h4>
+        <p class="card-text">Elige la Ducati perfecta para ti y diviértete configurándola para que se adapte a tu estilo de conducción!
+          ¡Haz clic en el modelo que prefieras y personalízala ahora!.</p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <a href="#" data-toggle="modal" data-target="#exampleModalLong6"><img class="card-img-top img-fluid" src="img/06.jpeg" alt="Card image cap"></a>
+      <div class="card-block">
+        <h4 class="card-title">Corre con Ducati</h4>
+        <p class="card-text">ganando presencia el color rojo en toda la moto, eclipsado solo por la presencia de multitud de patrocinadores.</p>
+        
+
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- fin Cards -->
+ 
+  
+  <!-- Formulario 1 -->
+  
+  <div class="container-fluid bg-success">
+    <section class="container py-5 mt-5">
+      <h3 class="text-uppercase text-center mb-4 pt-5 text-white">Ducati</h3>
+      <p class="lead text-center mb-4 text-white">dotato di avviamento elettrico</p>
+      </div>
+
+  <!-- fin Formulario 1 -->
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-inverse">
+    <div class="row text-white py-4 text-white">
+      <div class="col-md-3">
+        <h4 class="lead">Ducati Derechos reservados</h4>
+       
+      </div>
+      <div class="col-md-3">
+        
+        <p>El fabricante italiano ha decidido dar la oportunidad</p>
+      </div>
+      <div class="col-md-3">
+        <h4 class="lead">Mas que una creacion</h4>
+        <p>Actualmente se considera una de las marcas más importantes en el sector del motociclismo comercial y deportivo.</p>
+      </div>
+      <div class="col-md-3">
+        <h4 class="lead">Síguenos en redes sociales
+        </h4>
+        <a href="#"><span class="badge badge-primary">Facebook</span></a>
+        <a href="#"><span class="badge badge-danger">Youtube</span></a>
+      </div>
+    </div>
+  </footer>
+  <!-- Fin Footer -->
+    
+      
+    
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
